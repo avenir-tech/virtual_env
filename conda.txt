@@ -1,0 +1,32 @@
+conda info
+conda env list
+
+conda update conda
+
+conda create --name myenv python jupyter pandas=1.0
+
+conda activate
+conda deactivate
+
+-------------------------------------------------------------------
+
+conda list
+
+conda install matplotlib  
+pip install plotly
+
+conda update pandas
+
+conda remove matplotlib
+pip uninstall plotly
+
+-------------------------------------------------------------------
+conda env export > myenv.yml
+
+conda env remove --name myenv
+
+conda env create --file myenv.yml
+
+conda create --name myclone --clone myenv
+
+
